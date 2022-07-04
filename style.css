@@ -7,6 +7,9 @@ body {
 .top {
     display: flex;
     flex-direction: column;
+}
+
+.top, .footer {
     background-color: #1F2937;
 }
 
@@ -54,17 +57,36 @@ h1 {
 }
 
 .info {
-
+    padding-top: 24px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-bottom: 48px;
 }
 
 h2 {
+    display: flex;
+    justify-content: center;
     font-size: 36px;
     font-weight: 900;
     columns: 1F2937;
+    margin-top: 0;
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
     background-color: #E5E7EB;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+}
+
+.quote-author {
+    text-align: center;
 }
 
 .signup {
@@ -72,7 +94,8 @@ h2 {
 }
 
 .footer {
-
+    padding: 24px;
+    text-align: center;
 }
 
 .info, .signup {
@@ -80,7 +103,7 @@ h2 {
 }
 
 .header img {
-    height: 100px;
+    height: 24px;
     width: auto;
 }
 
@@ -89,16 +112,36 @@ h2 {
     width: auto;
 }
 
+.info-pics {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
 .info-pic img {
-    height: 200px;
+    height: 100px;
     width: auto;
+    align-self: center;
+}
+
+.info-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.info-pic .text {
+    text-align: center;
 }
 
 a {
     text-decoration: none;
 }
 
-a, .title-text {
+a, .title-text, .footer {
     color: #E5E7EB;
     font-size: 18px;
 }
